@@ -2,20 +2,23 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import useAuth from './../../Hooks/useAuth';
+import useAuth from "./../../Hooks/useAuth";
 
 const Navigation = () => {
   const { user, logOut } = useAuth();
 
-
-
   return (
     <>
-      <div className="container-fluid color">
+     <header>
         <div className="container">
           <div className="row">
-            <div className="py-3">
-              <Navbar fixed="top" collapseOnSelect expand="lg">
+            <div className="py-4">
+              <Navbar
+                fixed="top"
+                collapseOnSelect
+                expand="lg"
+                className="navLink"
+              >
                 <Container>
                   <Navbar.Brand>
                     <img
@@ -25,7 +28,7 @@ const Navigation = () => {
                     />
                   </Navbar.Brand>
                   <Navbar.Toggle />
-                  <Navbar.Collapse className=" justify-content-end align-content-center text-white">
+                  <Navbar.Collapse className=" justify-content-end align-items-center">
                     <Nav.Link as={HashLink} to="/home#banner">
                       Home
                     </Nav.Link>
@@ -45,22 +48,18 @@ const Navigation = () => {
                       Footer
                     </Nav.Link>
                     {user?.email ? (
-              <button className="sty" onClick={logOut}>
-                LogOut
-              </button>
-            ) : (
-              <NavLink to="/login">
-                <button className="sty">Login</button>
-              </NavLink>
-            )}
+                    <Nav.Link>
+                        <button onClick={logOut}>LogOut</button>
+                    </Nav.Link>
+                    ) : (
+                      <NavLink to="/login">
+                        <button>Login</button>
+                      </NavLink>
+                    )}
 
-            <Nav.Link
-              className="text-success  mx-3 text-decoration-underline"
-            >
-              {user?.displayName}
-            </Nav.Link>
-
-
+                    <Nav.Link className="text-success text-decoration-underline">
+                      {user?.displayName}
+                    </Nav.Link>
                   </Navbar.Collapse>
                 </Container>
               </Navbar>
@@ -68,7 +67,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-      </div>
+        </header>
     </>
   );
 };

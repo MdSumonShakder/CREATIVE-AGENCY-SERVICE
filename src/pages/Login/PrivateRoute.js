@@ -7,7 +7,7 @@ const PrivateRoute = ({ children, ...rest }) => {
   const { user, loading } = useAuth();
   let location = useLocation();
   if (loading) {
-    return <Spinner animation="border" className=" mx-auto"  variant="danger" />;
+    return <Spinner animation="border" className=" d-block mx-auto mt-3"   variant="danger" />;
   }
   if (user.email) {
     return children;

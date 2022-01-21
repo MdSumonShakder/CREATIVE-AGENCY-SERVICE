@@ -28,16 +28,16 @@ const Login = () => {
 
   return (
     <div
-      className="text-center pt-5 pb-5"
+      className="text-center pb-5 pt-4"
       style={{
         width: "100%",
-        backgroundImage: `url('https://images.pexels.com/photos/675267/pexels-photo-675267.jpeg?cs=srgb&dl=pexels-ylanite-koppens-675267.jpg&fm=jpg')`,
+        backgroundImage: `url('https://static-cse.canva.com/blob/572026/removingbackgroundimages_Unsplash.jpeg')`,
         backgroundPasition: "center",
         backgroundSize: "cover",
       }}
     >
-      <div className="container mb-5 pb-2">
-        <h3 className="mt-5">Please Login</h3>
+      <div className="container mb-5 pb-3">
+        <h3 className="mt-5 text-white">Please Login</h3>
 
         {!loading && (
           <form
@@ -61,7 +61,7 @@ const Login = () => {
               />
             </div>
             <div className="col-md-12">
-              <div className="bannerText">
+              <div>
                 <button className="mb-5" type="submit">
                   LOGIN
                 </button>
@@ -82,7 +82,7 @@ const Login = () => {
         {loading && <Spinner animation="border" variant="danger" />}
         {user?.email && (
           <Alert
-            className=" bg-white w-25 d-block mx-auto fw-bolder"
+            className="bg-white w-25 p-1 d-block mx-auto fw-bolder"
             variant="success"
           >
             Login Successfully!

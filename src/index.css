@@ -46,7 +46,7 @@ button {
 
 #banner{
   height: 69vh;
-  clip-path: polygon(0 0, 100% 0, 100% 79%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
   background-color: #ffc95e;
 }
 
@@ -116,22 +116,37 @@ button.active {
 }
 
 #footer,
-.color {
+header {
   background-color: #ffc95e;
 }
-
+.navLink{
+  background-color: #ffc95e;
+}
 .icon a {
   font-size: 35px;
   padding: 0px 10px;
   border: 2px solid rgb(183, 0, 255);
   margin-left: 8px;
-  border-radius: 10px;
+  border-radius: 3px;
   transition: .5s linear;
+  color: rgb(55, 0, 255);
 
 }
 
 .icon a:hover {
-  background-color: #003a1a;
+  background-color: #ffffff;
   color: rgb(255, 187, 0);
 
+
+}
+
+a.nav-link {
+  color: rgb(0, 0, 0);
+  transition: all .5s ease;
+  text-align: center;
+  font-weight: bolder;
+
+}
+a.nav-link:hover{
+  color: rgb(255, 255, 255);
 }

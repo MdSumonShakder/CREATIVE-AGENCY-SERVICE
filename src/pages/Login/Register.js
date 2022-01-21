@@ -30,7 +30,7 @@ const Register = () => {
         className="text-center pb-5 pt-4"
         style={{
           width: "100%",
-          backgroundImage: `url('https://images.pexels.com/photos/792115/pexels-photo-792115.jpeg?cs=srgb&dl=pexels-egor-kamelev-792115.jpg&fm=jpg')`,
+          backgroundImage: `url('https://i.pinimg.com/originals/97/ef/71/97ef710873ee1bda4e7f9bb027c323f9.jpg')`,
           backgroundPasition: "center",
           backgroundSize: "cover",
         }}
@@ -39,7 +39,7 @@ const Register = () => {
           <h3 className="text-white pb-2">Please Register</h3>
 
           {!loading && (
-            <form onSubmit={handleLoginSubmit} className="contact-forms mt-5">
+            <form onSubmit={handleLoginSubmit} className="contact-forms mb-4">
               <div className="col-md-6 d-block mx-auto">
                 <input
                   type="text"
@@ -99,7 +99,7 @@ const Register = () => {
 
           {user?.email && (
             <Alert
-              className=" bg-white w-25 d-block mx-auto fw-bolder"
+              className=" bg-white w-25 p-1 d-block mx-auto fw-bolder"
               variant="success"
             >
               Register Successfully!

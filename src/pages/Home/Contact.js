@@ -29,7 +29,7 @@ const Contact = () => {
       style={{
         marginTop: "50px",
         width: "100%",
-        backgroundImage: `url('https://i0.wp.com/hdwpro.com/wp-content/uploads/2017/01/Natural-Full-HD-Background.jpg')`,
+        backgroundImage: `url('https://wallpaperforu.com/wp-content/uploads/2019/10/daniil-silantev-F6Da4r2x5to-unsplash-scaled.jpg')`,
         backgroundPasition: "center",
         backgroundSize: "cover",
       }}

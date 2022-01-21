@@ -27,7 +27,7 @@ const Banner = () => {
                 <div className="col-md-6 col-10 mx-auto">
                   <div>
                     <img
-                      src="/images/logo.png"
+                      src="/images/Frame.png"
                       alt="images"
                       className="img-fluid"
                     />

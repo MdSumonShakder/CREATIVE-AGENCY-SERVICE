@@ -11,41 +11,41 @@ const Footer = () => {
             <div className=" text-center icon">
             <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://www.facebook.com/"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://twitter.com/home"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
       
               <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://www.instagram.com/"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
           
               <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://www.linkedin.com/feed/"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
          
               <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://github.com/MdSumonShakder"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
        
               <a
                 target="_blank"
-                href="https://www.facebook.com/sumon.shakder.16"
+                href="https://www.youtube.com/channel/UCLD9CflKsqVox6JZLbKpt0Q"
               >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
